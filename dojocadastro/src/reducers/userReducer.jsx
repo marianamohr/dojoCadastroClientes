@@ -12,6 +12,9 @@ function userReducer(state = INITIAL_STATE, action) {
                     action.payload.item,
                 ],
             };
+        case 'EXCLUIR':
+            console.log(state);
+            return   state.listUsers.filter(user => user !== action.item) 
         default:
             return state;
     }

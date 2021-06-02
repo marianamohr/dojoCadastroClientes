@@ -50,7 +50,7 @@ class Cadastrar extends React.Component {
   }
 }
 const mapDispatchToProps = (dispatch) => ({
-  cadastrar: (item) => dispatch(cadastrarAction(item))
+  cadastrar: (user) => dispatch(cadastrarAction(user))
 });
 
 export default connect(null, mapDispatchToProps)(Cadastrar);
