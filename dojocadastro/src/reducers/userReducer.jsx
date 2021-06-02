@@ -13,8 +13,7 @@ function userReducer(state = INITIAL_STATE, action) {
                 ],
             };
         case 'EXCLUIR':
-            console.log(state);
-            return   state.listUsers.filter(user => user !== action.item) 
+            return  { listUsers:  state.listUsers.filter(user => user !== action.item) }
         default:
             return state;
     }
