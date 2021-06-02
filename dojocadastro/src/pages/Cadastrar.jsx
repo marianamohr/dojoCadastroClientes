@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import cadastrarAction from '../actions'
 
@@ -39,11 +39,11 @@ class Cadastrar extends React.Component {
             Email:
       <input name='email' type="email" value={this.state.email} onChange={this.handleChange} />
           </label>
-          <Link to='/clients'>
+          {/* <Link to='/clients'> */}
           <button type="button" onClick={() => {
             cadastrar(this.state);
           }} > Login</button>
-          </Link>
+          {/* </Link> */}
         </form>
       </div>
     );
